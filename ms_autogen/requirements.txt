@@ -1,0 +1,2 @@
+pyautogen
+anthropic>=0.23.1
