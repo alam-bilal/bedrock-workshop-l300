@@ -1,5 +1,4 @@
 Notes: 
-- Tested with python 3.11.5 on Visual Studio with AWS CLI and AWS plugin configured.
 - Tested with Sagemaker notebooks t3 medium, conda_python3 kernel
 - Tested in us-east-1 Region
 
