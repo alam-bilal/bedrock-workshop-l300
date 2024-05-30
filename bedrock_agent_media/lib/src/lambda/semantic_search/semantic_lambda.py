@@ -41,7 +41,7 @@ from opensearchpy import (
         ],
         "responses": {
           "200": {
-            "description": "Successful response",
+            "description": "Json object with Summary and Titles properties. use double quotes for key AND values for all json elements and escape double quotes in values",
             "content": {
               "application/json": {
                 "schema": {

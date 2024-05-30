@@ -9,6 +9,62 @@ from opensearchpy import (
 )
 
 #openAPI schema
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Standard Search API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/standard-search": {
+      "get": {
+        "description": "Perform standard search using movies properties",
+        
+        "parameters": [
+            {
+                "name": "properties",
+                "in": "query",
+                "required": true,
+                "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the property to search for"
+                    },
+                    "value": {
+                        "type": "string",
+                        "description": "The value of the property to search for"
+                    }
+                    }
+                }
+                },
+                "description": "An array of property-value json pairs in double quotes to search for. e.g. [{'tmdb_id':'84756'}]."
+            }
+        ],
+        "responses": {
+          "200": {
+            "description": "Json object with Summary and Titles properties. use double quotes for key AND values for all json elements and escape double quotes in values",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 
 #handler
