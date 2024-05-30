@@ -33,15 +33,10 @@ cdk.out
 */*/cdk.out
 */*/*/cdk.out
 
-# dataset
-/bedrock_agent_new/dataset/*
-!/bedrock_agent_new/dataset/.gitkeep
-
-dataset/*
-!dataset/.gitkeep
 
 # temp folder
-bedrock_agent_new/tmp
+tmp
+tmp/*
 
 #lambda package
 */lib/src/package
