@@ -1,0 +1,86 @@
+.App {
+  padding: 20px 0 0 0 ;
+  align-self: center;
+  background-color: black;
+  font-family:Monospace;
+  width: 900px;
+  height:600px;
+}
+
+/* header */
+.appHeader {
+  color: pink;
+  font-size: 28px;
+}
+.appSearchHeader {
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+
+.appSearchHeaderInner{
+  display: inline-block;
+}
+
+/* buttons header */
+.searchEltGroup{
+  display: flex;
+}
+
+.appSearchHeader button {
+  margin-right: 10px;
+}
+
+.appSearchHeader input {
+  margin-right: 10px;
+}
+
+/* Movie list */
+.mainBlock{
+  margin: 20px 20px 20px 20px;
+  background-color: black;
+  height: 60%;
+}
+
+.movie{
+  background-color: black;
+  color: white;
+  /* display:flex; */
+  width:100%;
+  margin:10px 0 10px 0;
+  overflow:auto;
+}
+
+.movieImage{
+  float:left;
+  width:150px;
+}
+
+.movieImage img{
+  width:150px;
+}
+
+.movieMetadata{
+  width:300px;
+  margin: 0 20px 0 20px;
+  text-align: left;
+  font-size: 0.8em;
+  float:left;
+}
+
+.movieTitle{
+  font-weight: bold;
+  font-size: 1.4em;
+  color:lightpink;
+}
+
+.movieList{
+  color: white;
+}
+
+.inputField{
+  font-size: 0.8em;
+}
+
+.searchLoading img{
+  width: 5%;
+}
